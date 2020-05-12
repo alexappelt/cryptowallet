@@ -1,0 +1,23 @@
+<% if !notice.nil? %>
+  <%= content_tag(:p, notice , class:"alert alert-success")  %>
+<%end%>
+
+
+<form>
+<fieldset disabled>
+  <div class="form-group">
+    <label for="disabledTextInput">Descrição</label>
+    <input type="text" id="disabledTextInput" class="form-control" placeholder="<%=@moeda.descricao %>">
+  </div>
+
+  <div class="form-group">
+    <label for="disabledTextInput">Sigla</label>
+    <input type="text" id="disabledTextInput" class="form-control" placeholder="<%=@moeda.sigla %>">
+  </div>
+
+</fieldset>
+</form>
+
+
+<%= link_to 'Editar', edit_moeda_path(@moeda) , class:"btn btn-info"%>
+<%= link_to 'Voltar', moedas_path , class:"btn btn-primary" %>

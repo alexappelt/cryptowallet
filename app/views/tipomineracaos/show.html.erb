@@ -1,0 +1,23 @@
+<% if !notice.nil? %>
+  <%= content_tag(:p, notice , class:"alert alert-success")  %>
+<%end%>
+
+<form>
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput">Descrição</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="<%=@tipomineracao.descricao %>">
+    </div>
+
+    <div class="form-group">
+      <label for="disabledTextInput">Sigla</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="<%=@tipomineracao.sigla %>">
+    </div>
+
+  </fieldset>
+</form>
+
+
+
+<%= link_to 'Editar', edit_tipomineracao_path(@tipomineracao) , class:"btn btn-info" %>
+<%= link_to 'Voltar', tipomineracaos_path , class:"btn btn-primary" %>

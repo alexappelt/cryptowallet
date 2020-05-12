@@ -1,0 +1,39 @@
+<%= form_with(model: moeda, local: true) do |form| %>
+  <% if moeda.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(moeda.errors.count, "error") %> prohibited this moeda from being saved:</h2>
+
+      <ul>
+      <% moeda.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao , class:"form-control" , placeholder:"BitCoin"%>
+  </div>
+
+  <div lass="form-group">
+    <%= form.label :sigla %>
+    <%= form.text_field :sigla , class:"form-control" , placeholder:"BTC" %>
+  </div>
+
+  <div lass="form-group">
+   <%= image_tag moeda.imagem, width:25%>
+    <%= form.label :imagem %>
+    <%= form.text_field :imagem , class:"form-control" , placeholder:"https://img.ur/bitcoin.png"%>
+  </div>
+
+  <div lass="form-group">
+    <%= form.label "Tipo de Mineração"%>
+    <%=  form.select("tipomineracao_id" , @mining_type_options, {include_blank:true} , class:"form-control")   %>
+  </div>
+  </br>
+
+  <div class="actions">
+    <%= form.submit "Salvar" , class:"btn btn-success" , :onclick => '$.notify("Moeda Cadastrada com Sucesso", success);' %>
+
+<% end %>

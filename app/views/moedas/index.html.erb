@@ -1,0 +1,35 @@
+
+
+<% if !notice.nil? %>
+<%= content_tag(:p, notice , class:"alert alert-success")  %>
+<%end%>
+<h1>Moedas</h1>
+
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Descricao</th>
+      <th>Sigla</th>
+      <th>Imagem</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @moedas.each do |moeda| %>
+      <tr>
+        <td><%= moeda.descricao %></td>
+        <td><%= moeda.sigla %></td>
+        <td> <%=image_tag moeda.imagem , size: "25x25"%></td>
+        <td><%= link_to 'Visualizar', moeda , class:"btn btn-info"%></td>
+        <td><%= link_to 'Editar', edit_moeda_path(moeda) , class:"btn btn-warning" %></td>
+        <td><%= link_to 'Apagar', moeda, class:"btn btn-danger" , method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Moeda', new_moeda_path  , class:"btn btn-success"%>
+<%= link_to 'Voltar' , inicio_path, class:"btn btn-primary"   %>
