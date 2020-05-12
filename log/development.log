@@ -20119,3 +20119,269 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-05-12 11:28:59 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/alexappelt/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 524ms (Views: 518.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/moedas" for ::1 at 2020-05-12 11:29:00 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (1.4ms)[0m  [1m[34mSELECT "moedas".* FROM "moedas"[0m
+  ↳ app/views/moedas/index.html.erb:19
+  Rendered moedas/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 71ms (Views: 49.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/moedas" for ::1 at 2020-05-12 11:29:01 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (0.2ms)[0m  [1m[34mSELECT "moedas".* FROM "moedas"[0m
+  ↳ app/views/moedas/index.html.erb:19
+  Rendered moedas/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:02 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:02 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tipomineracaos" for ::1 at 2020-05-12 11:29:02 -0300
+Processing by TipomineracaosController#index as HTML
+  Rendering tipomineracaos/index.html.erb within layouts/application
+  [1m[36mTipomineracao Load (0.5ms)[0m  [1m[34mSELECT "tipomineracaos".* FROM "tipomineracaos"[0m
+  ↳ app/views/tipomineracaos/index.html.erb:17
+  Rendered tipomineracaos/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 56ms (Views: 43.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tipomineracaos" for ::1 at 2020-05-12 11:29:02 -0300
+Processing by TipomineracaosController#index as HTML
+  Rendering tipomineracaos/index.html.erb within layouts/application
+  [1m[36mTipomineracao Load (0.1ms)[0m  [1m[34mSELECT "tipomineracaos".* FROM "tipomineracaos"[0m
+  ↳ app/views/tipomineracaos/index.html.erb:17
+  Rendered tipomineracaos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:05 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:05 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/moedas" for ::1 at 2020-05-12 11:29:09 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (0.2ms)[0m  [1m[34mSELECT "moedas".* FROM "moedas"[0m
+  ↳ app/views/moedas/index.html.erb:19
+  Rendered moedas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/moedas" for ::1 at 2020-05-12 11:29:09 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (0.1ms)[0m  [1m[34mSELECT "moedas".* FROM "moedas"[0m
+  ↳ app/views/moedas/index.html.erb:19
+  Rendered moedas/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/moedas/1/edit" for ::1 at 2020-05-12 11:29:18 -0300
+Processing by MoedasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMoeda Load (0.3ms)[0m  [1m[34mSELECT  "moedas".* FROM "moedas" WHERE "moedas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moedas_controller.rb:74
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "tipomineracaos"."descricao", "tipomineracaos"."id" FROM "tipomineracaos"[0m
+  ↳ app/controllers/moedas_controller.rb:78
+  Rendering moedas/edit.html.erb within layouts/application
+  Rendered moedas/_form.html.erb (141.5ms)
+  Rendered moedas/edit.html.erb within layouts/application (143.9ms)
+Completed 200 OK in 173ms (Views: 166.1ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/moedas/1" for ::1 at 2020-05-12 11:29:19 -0300
+Processing by MoedasController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"54mhun0XebL+KHTv2p4Zv21bdjKmh7LbW8dUbcYoEjm8Dc8y6Fx1RMuAp6VTZCKi6alvZaH/GEDhhDIeKCB12g==", "moeda"=>{"descricao"=>"Bitcoin", "sigla"=>"BTC", "imagem"=>"https://www.kindpng.com/picc/m/257-2575803_bitcoin-blockchain-icon-golden-internet-coin-bitcoin-icon.png", "tipomineracao_id"=>"2"}, "commit"=>"Salvar", "id"=>"1"}
+  [1m[36mMoeda Load (0.1ms)[0m  [1m[34mSELECT  "moedas".* FROM "moedas" WHERE "moedas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moedas_controller.rb:74
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "tipomineracaos"."descricao", "tipomineracaos"."id" FROM "tipomineracaos"[0m
+  ↳ app/controllers/moedas_controller.rb:78
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/moedas_controller.rb:49
+  [1m[36mTipomineracao Load (0.2ms)[0m  [1m[34mSELECT  "tipomineracaos".* FROM "tipomineracaos" WHERE "tipomineracaos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/moedas_controller.rb:49
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/moedas_controller.rb:49
+Redirected to http://localhost:3000/moedas/1
+Completed 302 Found in 18ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/moedas/1" for ::1 at 2020-05-12 11:29:19 -0300
+Processing by MoedasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMoeda Load (0.1ms)[0m  [1m[34mSELECT  "moedas".* FROM "moedas" WHERE "moedas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/moedas_controller.rb:74
+  Rendering moedas/show.html.erb within layouts/application
+  Rendered moedas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/moedas" for ::1 at 2020-05-12 11:29:21 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (0.2ms)[0m  [1m[34mSELECT "moedas".* FROM "moedas"[0m
+  ↳ app/views/moedas/index.html.erb:19
+  Rendered moedas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/moedas/2" for ::1 at 2020-05-12 11:29:22 -0300
+Processing by MoedasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMoeda Load (0.2ms)[0m  [1m[34mSELECT  "moedas".* FROM "moedas" WHERE "moedas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/moedas_controller.rb:74
+  Rendering moedas/show.html.erb within layouts/application
+  Rendered moedas/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/moedas" for ::1 at 2020-05-12 11:29:26 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (0.2ms)[0m  [1m[34mSELECT "moedas".* FROM "moedas"[0m
+  ↳ app/views/moedas/index.html.erb:19
+  Rendered moedas/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tipomineracaos" for ::1 at 2020-05-12 11:29:30 -0300
+Processing by TipomineracaosController#index as HTML
+  Rendering tipomineracaos/index.html.erb within layouts/application
+  [1m[36mTipomineracao Load (0.1ms)[0m  [1m[34mSELECT "tipomineracaos".* FROM "tipomineracaos"[0m
+  ↳ app/views/tipomineracaos/index.html.erb:17
+  Rendered tipomineracaos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tipomineracaos" for ::1 at 2020-05-12 11:29:31 -0300
+Processing by TipomineracaosController#index as HTML
+  Rendering tipomineracaos/index.html.erb within layouts/application
+  [1m[36mTipomineracao Load (0.1ms)[0m  [1m[34mSELECT "tipomineracaos".* FROM "tipomineracaos"[0m
+  ↳ app/views/tipomineracaos/index.html.erb:17
+  Rendered tipomineracaos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/moedas" for ::1 at 2020-05-12 11:29:36 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (0.1ms)[0m  [1m[34mSELECT "moedas".* FROM "moedas"[0m
+  ↳ app/views/moedas/index.html.erb:19
+  Rendered moedas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/moedas" for ::1 at 2020-05-12 11:29:36 -0300
+Processing by MoedasController#index as HTML
+  Rendering moedas/index.html.erb within layouts/application
+  [1m[36mMoeda Load (0.1ms)[0m  [1m[34mSELECT "moedas".* FROM "moedas"[0m
+  ↳ app/views/moedas/index.html.erb:19
+  Rendered moedas/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inicio" for ::1 at 2020-05-12 11:29:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tipomineracaos" for ::1 at 2020-05-12 11:29:39 -0300
+Processing by TipomineracaosController#index as HTML
+  Rendering tipomineracaos/index.html.erb within layouts/application
+  [1m[36mTipomineracao Load (0.1ms)[0m  [1m[34mSELECT "tipomineracaos".* FROM "tipomineracaos"[0m
+  ↳ app/views/tipomineracaos/index.html.erb:17
+  Rendered tipomineracaos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tipomineracaos" for ::1 at 2020-05-12 11:29:40 -0300
+Processing by TipomineracaosController#index as HTML
+  Rendering tipomineracaos/index.html.erb within layouts/application
+  [1m[36mTipomineracao Load (0.1ms)[0m  [1m[34mSELECT "tipomineracaos".* FROM "tipomineracaos"[0m
+  ↳ app/views/tipomineracaos/index.html.erb:17
+  Rendered tipomineracaos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.1ms)
+
+
